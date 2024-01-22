@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.error{
+    color:#b40000;
+}
+.success{
+    color:#7fb728;
+}
+li{
+    /* list-style: none; */
+    margin-right: 1rem;
+}
+body{
+    height: 100vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+#form{
+    width:320px;
+    border:1px solid #333;
+    border-radius: 10px;
+
+    background-color: white;
+}
+.loginimg{
+    position:relative;
+}
+#form>.loginimg>img{
+    width:100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+.form-head{
+    text-align: center;
+    font-size: 1.5rem;
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:aliceblue;
+    transform: translate(-50%,-50%);
+}
+
+.formwrap{
+    padding-inline:1rem;
+}
+
+.inputbox{
+    margin:16px 0;
+}
+.passwordwrap{
+    position:relative;
+    
+}
+.inputbox input{
+    width: 100%;
+    height:25px;
+    border: none;
+    border: 1px solid #333;
+    border-radius: 2px;
+    padding: 10px;
+    /* margin: 8px 0; */
+    outline:none;
+}
+.inputbox input#password{
+    padding: 10px 30px 10px 10px ;
+}
+
+.passwordwrap>i{
+    position:absolute;
+    top:55%;
+    right:8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+input[type="submit"]{
+    padding: 0;
+    background: #333;
+    color: aliceblue;
+    border: none;
+    height:30px;
+    cursor:pointer;
+}
+
+small{
+    font-size: 0.9rem;
+}
+
+@media only screen and (max-width:300px){
+    .formwrap{
+        padding-inline:0.5rem;
+    }
+    
+}
